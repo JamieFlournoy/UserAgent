@@ -8,7 +8,9 @@ Determine whether the HTTP user agent talking to your code is a web spider.
 
 == FEATURES/PROBLEMS:
 
-All you can do at this point is call UserAgent.is_spider? and pass it the user agent.
+Call UserAgent.is_spider? and pass it the user agent.
+
+UserAgent::Test::AGENT_STRINGS is a hash of sample user agent strings you can use in your tests.
 
 == SYNOPSIS:
 
@@ -21,7 +23,10 @@ And put this in your ApplicationController:
   session :off, :if => proc { |request| UserAgent.is_spider?(request.user_agent) }
 
 
-If you're not using Rails then just call UserAgent.is_spider? and pass it the user agent string.
+If you're not using Rails then just require user_agent, then call UserAgent.is_spider? and pass it the user agent string.
+
+If you want to use UserAgent::Test::AGENT_STRINGS, remember to require 'user_agent/test'.
+
 
 == REQUIREMENTS:
 

@@ -2,5 +2,7 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
+UserAgent.gemspec
 lib/user_agent.rb
+lib/user_agent/test.rb
 test/test_user_agent.rb

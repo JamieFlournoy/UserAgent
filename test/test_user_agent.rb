@@ -1,14 +1,10 @@
 require "test/unit"
 require "user_agent"
+require 'user_agent/test'
 
 class TestUserAgent < Test::Unit::TestCase
   def setup
-    @agent_strings = {
-      :googlebot => "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
-      :msnbot    => "msnbot/1.1 (+http://search.msn.com/msnbot.htm)",
-      :firefox   => "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.12) Gecko/2009070609 Firefox/3.0.12",
-      :opera     => "Opera/8.00 (Windows NT 5.1; U; en)"
-    }
+    @agent_strings = UserAgent::Test::AGENT_STRINGS
   end
   
   def test_is_spider_true
