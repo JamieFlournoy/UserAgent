@@ -14,7 +14,7 @@ All you can do at this point is call UserAgent.is_spider? and pass it the user a
 
 If you're using Rails, require the gem in config/environment.rb like this:
 
-  config.gem 'jamieflournoy-UserAgent', :lib => 'user_agent'
+  config.gem 'JamieFlournoy-UserAgent', :lib => 'user_agent'
 
 and create an initializer at config/initializers/user_agent.rb and paste this into it:
 
@@ -26,13 +26,11 @@ Otherwise just ask UserAgent.is_spider? and pass it the user agent string.
 
 == REQUIREMENTS:
 
-To run the tests you will need Shoulda.
-
-sudo gem install shoulda
+Ruby 1.8.6 (or similar).
 
 == INSTALL:
 
-sudo gem install jamieflournoy-UserAgent
+sudo gem install JamieFlournoy-UserAgent
 
 == LICENSE:
 
