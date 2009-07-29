@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{user_agent}
+  s.name = %q{UserAgent}
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/jamieflournoy/UserAgent}
   s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{user_agent}
+  s.rubyforge_project = %q{useragent}
   s.rubygems_version = %q{1.3.3}
   s.summary = %q{Determine whether the HTTP user agent talking to your code is a web spider.}
   s.test_files = ["test/test_user_agent.rb"]

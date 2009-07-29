@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'hoe'
 
-Hoe.spec 'user_agent' do
+Hoe.spec 'UserAgent' do
   developer('Jamie Flournoy', 'jamie@pervasivecode.com')
 end
 
