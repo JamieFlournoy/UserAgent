@@ -1,6 +1,6 @@
 = UserAgent
 
-http://github.com/jamieflournoy/UserAgent
+http://github.com/JamieFlournoy/UserAgent/
 
 == DESCRIPTION:
 
@@ -16,13 +16,12 @@ If you're using Rails, require the gem in config/environment.rb like this:
 
   config.gem 'JamieFlournoy-UserAgent', :lib => 'user_agent'
 
-and create an initializer at config/initializers/user_agent.rb and paste this into it:
+And put this in your ApplicationController:
 
-class ApplicationController < ActionController::Base
   session :off, :if => proc { |request| UserAgent.is_spider?(request.user_agent) }
-end
 
-Otherwise just ask UserAgent.is_spider? and pass it the user agent string.
+
+If you're not using Rails then just call UserAgent.is_spider? and pass it the user agent string.
 
 == REQUIREMENTS:
 
