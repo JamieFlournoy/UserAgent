@@ -1,0 +1,8 @@
+*~
+.autotest
+.DS_Store
+*.tmproj
+coverage/
+doc/
+log/*.log
+pkg/
